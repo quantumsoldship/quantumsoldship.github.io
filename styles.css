@@ -511,9 +511,12 @@ ol {
   .columns {
     flex-direction: column;
   }
+  .intro-image {
+    max-width: 70%;
+  }
   
   .hero-title {
-    font-size: 10rem;
+    font-size: 50%;
   }
   
   .hero-subtitle {
