@@ -776,4 +776,29 @@ ol {
   .detailed-ranking-item .player-name {
     font-size: 0.8rem;
   }
+
+  .hero-title .airball-logo {
+  height: 10rem; /* Matches .hero-title font-size */
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  /* Optional: add filter if your text had a drop shadow or effect */
+  /* filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.5)); */
+}
+
+@media (max-width: 900px) {
+  .hero-title .airball-logo {
+    height: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-title .airball-logo {
+    height: 50vw;
+  }
+}
+@media (max-width: 360px) {
+  .hero-title .airball-logo {
+    height: 2rem;
+  }
+}
 }
