@@ -512,7 +512,7 @@ ol {
     flex-direction: column;
   }
   .intro-image {
-    max-width: 70%;
+    max-width: 40%;
   }
   
   .hero-title {
@@ -528,6 +528,7 @@ ol {
     top: auto;
     bottom: 1rem;
     gap: 1rem;
+    align: center;
     padding: 0.6rem 1.5rem;
     font-size: 0.85rem;
     background: rgba(255, 255, 255, 0.95);
