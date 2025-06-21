@@ -156,6 +156,7 @@ body {
 .navbar .special:hover {
   background-color: #127d88;
   color: #e8f9fc;
+  transform: scale(1.08) rotate(2deg);
 }
 
 /* Main Content */
