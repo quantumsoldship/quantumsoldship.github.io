@@ -122,7 +122,10 @@ body {
   text-decoration: none;
   color: #1F2427;
   font-weight: 500;
-  transition: color 0.2s;
+  transition:
+    color 0.2s,
+    transform 0.38s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* S-curve */
+
 }
 
 .navbar a:hover {
@@ -612,11 +615,10 @@ ol {
 }
 
 @media (max-width: 480px) {
-      #image1,
-      #image2,
-      #image3 {
-      display: none !important;
-    }
+  .intro-image {
+    display: none !important;
+  }
+}
   }
   .hero-header {
     height: 60vh;
