@@ -532,6 +532,7 @@ ol {
     padding: 0.6rem 1.5rem;
     font-size: 0.85rem;
     background: rgba(255, 255, 255, 0.65);
+    justify-content: center;
   }
   
   .navbar-scrolled {
@@ -609,6 +610,12 @@ ol {
 }
 
 @media (max-width: 480px) {
+      #image1,
+      #image2,
+      #image3 {
+      display: none !important;
+    }
+  }
   .hero-header {
     height: 60vh;
     min-height: 400px;
@@ -616,6 +623,15 @@ ol {
   
   .hero-title {
     font-size: 50vw;
+  }
+  .special,
+  .action-button {
+    background: linear-gradient(90deg, #1CA2B2 0%, #167A86 100%);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
   }
   
   .hero-subtitle {
@@ -632,8 +648,9 @@ ol {
     transform: translateX(-50%);
     width: calc(100vw - 1rem);
     max-width: 380px;
-    background: rgba(255, 255, 255, 0.98);
-    border: 1px solid rgba(28, 162, 178, 0.4);
+    background: rgba(255, 255, 255, 0.75);
+    justify-content: center;
+    
   }
   
   .navbar-scrolled {
@@ -641,8 +658,12 @@ ol {
   }
   
   .navbar .special {
-    padding: 0.4rem 0.75rem;
-    font-size: 0.8rem;
+    background: linear-gradient(90deg, #1CA2B2 0%, #167A86 100%);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
   }
   
   .main-content {
