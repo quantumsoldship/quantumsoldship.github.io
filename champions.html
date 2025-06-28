@@ -4,57 +4,218 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Airball Champions</title>
+  <meta name="description" content="Hall of champions for Airball tournaments and leagues">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Floating Navbar -->
-  <nav class="navbar" id="navbar">
-    <a href="index.html">Home</a>
-    <a href="leagues.html">Leagues</a>
-    <a class="special" href="#">Championship</a>
-  </nav>
+<!-- Dark mode toggle -->
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+  <svg class="theme-toggle-icon" fill="currentColor" viewBox="0 0 20 20">
+    <path class="sun-icon" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
+    <path class="moon-icon" style="display: none;" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+  </svg>
+</button>
 
-  <!-- Main Content -->
-  <br>
-  <br>
-  <br>
-  <br>
-  
-  <main class="main-content">
+<!-- Floating Navbar -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="leagues.html">Leagues</a>
+  <a class="special" href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105"
+     target="_blank" rel="noopener noreferrer">Championship</a>
+</nav>
+<br>
+<br>
+<!-- Main Content -->
+<main class="main-content" id="main-content">
+  <div class="page-header">
     <h1>Airball Champions</h1>
-    
-    <section class="champions-section">
-      <h2>Airball Championship 2023</h2>
-      <p><strong>Champion:</strong> Sam Cullum</p>
-      <p><strong>Runner-up:</strong> Bennett Cullum</p>
-    </section>
+    <p class="page-subtitle">Airball Champions and League Champions since 2023</p>
+  </div>
 
-    <section class="champions-section">
-      <h2>Airball Championship 2024</h2>
-      <p><strong>Champion:</strong> Sam Cullum</p>
-      <p><strong>Runner-up:</strong> Isaac Northington</p>
-    </section>
+  <div class="champions-grid">
+    <!-- 2024 Championship -->
+    <div class="championship-card">
+      <div class="card-header">
+        <h2>Airball Championship</h2>
+        <div class="year-badge">2024</div>
+      </div>
 
-    <section class="champions-section">
-      <h2>Airball Leagues 2025</h2>
-      <p>Underway</p>
-    </section>
-  </main>
+      <div class="champion-section">
+        <div class="champion-card">
+          <div class="champion-avatar">
+            <div class="avatar-placeholder champion">
+              <span class="avatar-initials">SC</span>
+            </div>
+          </div>
+          <div class="champion-info">
+            <h3>Sam Cullum</h3>
+            <p class="champion-title">Champion</p>
+          </div>
+        </div>
 
-  <script src="/scripts/script.js"></script>
-  <script>
-    // Navbar scroll behavior - move closer to top when scrolling
-    window.addEventListener('scroll', function() {
-      const navbar = document.getElementById('navbar');
-      const scrolled = window.pageYOffset;
-      
-      if (scrolled > 100) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-      }
+        <div class="runner-up-card">
+          <div class="runner-up-avatar">
+            <div class="avatar-placeholder runner-up">
+              <span class="avatar-initials">IN</span>
+            </div>
+          </div>
+          <div class="runner-up-info">
+            <h4>Isaac Northington</h4>
+            <p class="runner-up-title">Runner-up</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2023 Championship -->
+    <div class="championship-card">
+      <div class="card-header">
+        <h2>Airball Championship</h2>
+        <div class="year-badge">2023</div>
+      </div>
+
+      <div class="champion-section">
+        <div class="champion-card">
+          <div class="champion-avatar">
+            <div class="avatar-placeholder champion">
+              <span class="avatar-initials">SC</span>
+            </div>
+            <div class="crown-icon"></div>
+          </div>
+          <div class="champion-info">
+            <h3>Sam Cullum</h3>
+            <p class="champion-title">Champion</p>
+          </div>
+        </div>
+
+        <div class="runner-up-card">
+          <div class="runner-up-avatar">
+            <div class="avatar-placeholder runner-up">
+              <span class="avatar-initials">BC</span>
+            </div>
+          </div>
+          <div class="runner-up-info">
+            <h4>Bennett Cullum</h4>
+            <p class="runner-up-title">Runner-up</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2025 Leagues (Current) -->
+    <div class="championship-card current-season">
+      <div class="card-header">
+        <h2>Airball Leagues</h2>
+        <div class="year-badge current">2025</div>
+      </div>
+
+      <div class="current-season-content">
+        <div class="status-indicator-large">
+          <div class="pulse-ring"></div>
+          <div class="status-dot-large"></div>
+        </div>
+        <h3>Season in Progress</h3>
+        <p>Championship tournament coming August 2nd</p>
+        <a href="leagues.html" class="view-standings-btn">View Current Standings</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hall of Fame Stats -->
+  <section class="hall-of-fame">
+    <h2>Champion Statistics</h2>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Most Championships</div>
+        <div class="stat-detail">Sam Cullum</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">2</div>
+        <div class="stat-label">Most Finals Appearances</div>
+        <div class="stat-detail">Sam Cullum</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <img src="logo_main.png" alt="Airball Logo" class="footer-logo" loading="lazy">
+    <p>&copy; 2025 Airball. Fast-paced, strategic, and fun for everyone.</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="leagues.html">Leagues</a>
+      <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Dark mode functionality
+  const themeToggle = document.getElementById('theme-toggle');
+  const sunIcon = document.querySelector('.sun-icon');
+  const moonIcon = document.querySelector('.moon-icon');
+
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', currentTheme);
+
+  if (currentTheme === 'dark') {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'block';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+
+    if (newTheme === 'dark') {
+      sunIcon.style.display = 'none';
+      moonIcon.style.display = 'block';
+    } else {
+      sunIcon.style.display = 'block';
+      moonIcon.style.display = 'none';
+    }
+  });
+
+  // Enhanced navbar scroll behavior
+  let ticking = false;
+
+  function updateNavbar() {
+    const navbar = document.getElementById('navbar');
+    const scrolled = window.pageYOffset;
+
+    if (scrolled > 100) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(updateNavbar);
+      ticking = true;
+    }
+  });
+
+  // Add loading states for images
+  document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+      img.addEventListener('error', function() {
+        this.style.display = 'none';
+        console.warn('Failed to load image:', this.src);
+      });
     });
-  </script>
+  });
+</script>
 </body>
 </html>
