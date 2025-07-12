@@ -1659,4 +1659,161 @@ html {
   .status-dot-large {
     animation: none;
   }
+
+  /* Leagues page specific styles */
+  .qualification-notice {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid var(--glass-border-light);
+    border-radius: 20px;
+    padding: 32px;
+    margin: 60px 0;
+    text-align: center;
+    box-shadow: var(--glass-shadow);
+  }
+
+  [data-theme="dark"] .qualification-notice {
+    background: var(--glass-bg-dark);
+    border-color: var(--glass-border-dark);
+  }
+
+  .notice-content h3 {
+    margin: 0 0 16px 0;
+    color: var(--primary-color);
+    font-size: 24px;
+  }
+
+  .notice-content p {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-primary);
+  }
+
+  .rankings-comparison {
+    margin: 80px 0;
+  }
+
+  .comparison-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .comparison-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    margin-top: 16px;
+    font-weight: 400;
+  }
+
+  .ranking-card {
+    background: var(--glass-bg-light);
+    backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    -webkit-backdrop-filter: var(--glass-blur) var(--glass-saturate);
+    border: 1px solid var(--glass-border-light);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: var(--glass-shadow);
+    height: 100%;
+  }
+
+  [data-theme="dark"] .ranking-card {
+    background: var(--glass-bg-dark);
+    border-color: var(--glass-border-dark);
+  }
+
+  .ranking-card-header {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--glass-border-light);
+  }
+
+  [data-theme="dark"] .ranking-card-header {
+    border-color: var(--glass-border-dark);
+  }
+
+  .ranking-card-header h3 {
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    color: var(--text-primary);
+  }
+
+  .ranking-card-header p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-secondary);
+  }
+
+  .explanation-note {
+    margin-top: 60px;
+    padding: 24px 32px;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    text-align: center;
+  }
+
+  .explanation-note p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+
+  /* Enhanced detailed ranking items */
+  .detailed-ranking-item .rank-circle.small {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+    border-width: 1px;
+  }
+
+  /* Responsive design for leagues */
+  @media (max-width: 768px) {
+    .qualification-notice {
+      padding: 24px;
+      margin: 40px 0;
+    }
+
+    .ranking-card {
+      padding: 24px;
+    }
+
+    .ranking-card-header {
+      margin-bottom: 24px;
+    }
+
+    .explanation-note {
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .qualification-notice {
+      padding: 20px;
+    }
+
+    .notice-content h3 {
+      font-size: 20px;
+    }
+
+    .notice-content p {
+      font-size: 16px;
+    }
+
+    .ranking-card {
+      padding: 20px;
+    }
+
+    .ranking-card-header h3 {
+      font-size: 20px;
+    }
+
+    .detailed-ranking-item .rank-circle.small {
+      width: 24px;
+      height: 24px;
+      font-size: 11px;
+    }
+  }
 }
