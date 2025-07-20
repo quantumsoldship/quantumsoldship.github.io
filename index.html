@@ -1,440 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Airball</title>
-  <meta name="description" content="Airball is a fun and exciting game combining elements of four-square, tennis, dodgeball and volleyball. Join leagues, championships, and learn to play!">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airball</title>
+    <meta name="description" content="Airball is a fun and exciting game combining elements of four-square, tennis, dodgeball and volleyball. Join leagues, championships, and learn to play!">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <!-- Skip to main content for accessibility -->
 
 <!-- Dark mode toggle -->
 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-  <svg class="theme-toggle-icon" fill="currentColor" viewBox="0 0 20 20">
-    <path class="sun-icon" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
-    <path class="moon-icon" style="display: none;" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-  </svg>
+    <svg class="theme-toggle-icon" fill="currentColor" viewBox="0 0 20 20">
+        <path class="sun-icon" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
+        <path class="moon-icon" style="display: none;" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+    </svg>
 </button>
 
 <!-- Floating Navbar -->
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-  <a href="leagues.html" aria-label="View league standings and information">Leagues</a>
-  <a href="champions.html" aria-label="View championship winners">Champions</a>
-  <a class="special" href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105"
-     target="_blank" rel="noopener noreferrer" aria-label="Sign up for championship (opens in new tab)">Championship</a>
+    <a href="leagues.html" aria-label="View league standings and information">Leagues</a>
+    <a href="champions.html" aria-label="View championship winners">Champions</a>
+    <a class="special" href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105"
+       target="_blank" rel="noopener noreferrer" aria-label="Sign up for championship (opens in new tab)">Championship</a>
 </nav>
 
 <!-- Hero Header -->
 <header class="hero-header">
-  <div class="hero-image">
-    <img src="header.png" alt="Airball players in action on court" loading="eager" />
-  </div>
-  <div class="hero-overlay">
-    <img src="logo_main.png" alt="Airball Logo" class="airball-logo" loading="eager" />
-  </div>
+    <div class="hero-image">
+        <img src="header.png" alt="Airball players in action on court" loading="eager" />
+    </div>
+    <div class="hero-overlay">
+        <img src="logo_main.png" alt="Airball Logo" class="airball-logo" loading="eager" />
+    </div>
 </header>
 
 <!-- Main Content -->
 <main class="main-content" id="main-content">
-  <section class="intro-section">
-    <div class="intro-text">
-      <h1>Welcome to Airball</h1>
-      <p class="intro-description">
-        Airball is a fun and exciting game where two players face off on opposite sides of the court trying to outplay their opponent with strong, strategic hits. Airball is played using a volleyball, hitting it twice for every shot. The game combines elements of four-square, tennis, dodgeball and volleyball to create a unique, entertaining experience that is still easy to play.
-      </p>
-      <div class="intro-button">
-        <button onclick="scrollToRules()" class="action-button">
-          How to Play
-        </button>
-      </div>
-    </div>
-    <div class="intro-image">
-      <img src="image1.png" alt="Airball player in dynamic action pose during gameplay" loading="lazy" />
-    </div>
-  </section>
+    <section class="intro-section">
+        <div class="intro-text">
+            <h1>Welcome to Airball</h1>
+            <p class="intro-description">
+                Airball is a fun and exciting game where two players face off on opposite sides of the court trying to outplay their opponent with strong, strategic hits. Airball is played using a volleyball, hitting it twice for every shot. The game combines elements of four-square, tennis, dodgeball and volleyball to create a unique, entertaining experience that is still easy to play.
+            </p>
+            <div class="intro-button">
+                <button onclick="scrollToRules()" class="action-button">
+                    How to Play
+                </button>
+            </div>
+        </div>
+        <div class="intro-image">
+            <img src="image1.png" alt="Airball player in dynamic action pose during gameplay" loading="lazy" />
+        </div>
+    </section>
 
-  <section class="intro-section">
-    <div class="intro-text">
-      <h2>Airball Leagues</h2>
-      <p class="intro-description">
-        Airball leagues are biweekly events where players participate in two official matches to earn an automatic spot in the Airball Championship. Players are randomly assigned opponents each week, ensuring fair competition and exciting matchups across all skill levels.
-      </p>
-      <div class="status-indicator">
-        <span class="status-dot" aria-hidden="true"></span>
-        <span class="status-text">Leagues are currently closed for this season</span>
-      </div>
-      <div class="intro-button">
-        <a href="leagues.html" class="action-button secondary" aria-label="View current league standings">
-          League Standings
-        </a>
-      </div>
-    </div>
-    <div class="intro-image">
-      <img src="image2.png" alt="Player executing a powerful spike during league play" loading="lazy" />
-    </div>
-  </section>
+    <section class="intro-section">
+        <div class="intro-text">
+            <h2>Airball Leagues</h2>
+            <p class="intro-description">
+                Airball leagues are biweekly events where players participate in two official matches to earn an automatic spot in the Airball Championship. Players are randomly assigned opponents each week, ensuring fair competition and exciting matchups across all skill levels.
+            </p>
+            <div class="status-indicator">
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="status-text">Leagues are finished for 2025.</span>
+            </div>
+            <div class="intro-button">
+                <a href="leagues.html" class="action-button secondary" aria-label="View current league standings">
+                    League Standings
+                </a>
+            </div>
+        </div>
+        <div class="intro-image">
+            <img src="image2.png" alt="Player executing a powerful spike during league play" loading="lazy" />
+        </div>
+    </section>
 
-  <section class="intro-section">
-    <div class="intro-text">
-      <h2>Airball Championship 2025</h2>
-      <div class="event-details">
-        <div class="event-date">
-          <span class="date-label">Date</span>
-          <span class="date-value">August 2nd</span>
+    <section class="intro-section">
+        <div class="intro-text">
+            <h2>Airball Championship 2025</h2>
+            <div class="event-details">
+                <div class="event-date">
+                    <span class="date-label">Date</span>
+                    <span class="date-value">August 2nd</span>
+                </div>
+                <div class="event-time">
+                    <span class="time-label">Time</span>
+                    <span class="time-value">3-6 PM</span>
+                </div>
+            </div>
+            <p class="intro-description">
+                The annual Airball Championship is an open event for all Airball players, competing in a selection-then-bracket style tournament where an airball champion is crowned, receiving their name on the champions page and eternal glory.
+            </p>
         </div>
-        <div class="event-time">
-          <span class="time-label">Time</span>
-          <span class="time-value">3-6 PM</span>
+        <div class="intro-image">
+            <img src="image3.png" alt="Championship-level player demonstrating advanced technique" loading="lazy" />
         </div>
-      </div>
-      <p class="intro-description">
-        The annual Airball Championship is an open event for all Airball players, competing in a selection-then-bracket style tournament where an airball champion is crowned, receiving their name on the champions page and eternal glory.
-      </p>
-    </div>
-    <div class="intro-image">
-      <img src="image3.png" alt="Championship-level player demonstrating advanced technique" loading="lazy" />
-    </div>
-  </section>
+    </section>
 
-  <!-- Rankings Section -->
-  <section class="rankings-section">
-    <div class="section-header">
-      <h2>Current League Rankings</h2>
-      <p class="section-subtitle">Top performers in the 2025 season</p>
-    </div>
-
-    <div class="rankings">
-      <div class="ranking-item top-player">
-        <div class="ranking-number">
-          <span class="rank-circle gold">1</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Sam C.</span>
-          <span class="record">10-0 (100%)</span>
-          <span class="rating">Rating: 80</span>
-        </div>
-      </div>
-      <div class="ranking-item">
-        <div class="ranking-number">
-          <span class="rank-circle">2</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Josh N.</span>
-          <span class="record">6-0 (100%)</span>
-          <span class="rating">Rating: 76</span>
-        </div>
-      </div>
-      <div class="ranking-item">
-        <div class="ranking-number">
-          <span class="rank-circle">3</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Joshua H.</span>
-          <span class="record">7-1 (87.5%)</span>
-          <span class="rating">Rating: 72</span>
-        </div>
-      </div>
-      <div class="ranking-item">
-        <div class="ranking-number">
-          <span class="rank-circle">4</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Isaac N..</span>
-          <span class="record">5-1 (83.3%)</span>
-          <span class="rating">Rating: 74</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="rankings-footer">
-      <a href="leagues.html" class="view-all-link" aria-label="View complete league standings">
-        View Full Standings
-      </a>
-    </div>
-  </section>
-
-  <!-- Rules Section with Carousel -->
-  <section class="rules-section" id="rules">
-    <div class="section-header">
-      <h2>How to Play Airball</h2>
-      <p class="section-subtitle">An engaging and dynamic outdoor game that emphasizes skill, strategy, and physical activity</p>
-    </div>
-
-    <div class="rules-overview">
-      <p><strong>Basic Concept:</strong> Players face off on opposite sides of a court, with the server hitting the ball in the air before sending it over and the receiver using two hits after one bounce to return it.</p>
-    </div>
-
-    <div class="rules-carousel">
-      <div class="rules-carousel-container" id="rulesCarousel">
-        <div class="rule-card">
-          <h3><span class="rule-number">1</span>Setup</h3>
-          <ul>
-            <li>Draw a rectangle on a flat, hard surface: 24 feet long by 16 feet wide</li>
-            <li>Leave at least 10 feet of empty space around all sides</li>
-            <li>Draw a line down the middle to create two equal halves</li>
-            <li>Draw a "spiking line" on each side, 7 feet from the middle line</li>
-            <li>Create three equal zones (5'4" each) on both sides of the middle line</li>
-          </ul>
+    <!-- Rankings Section -->
+    <section class="rankings-section">
+        <div class="section-header">
+            <h2>Current League Rankings</h2>
+            <p class="section-subtitle">Top performers in the 2025 season</p>
         </div>
 
-        <div class="rule-card">
-          <h3><span class="rule-number">2</span>Gameplay</h3>
-          <ul>
-            <li>The receiving player must let the ball bounce once, then return it with two hits</li>
-            <li>One hit in the air, followed by one hit to the other side</li>
-            <li>If a player touches the ball before it bounces, the opponent scores</li>
-            <li>If a player fails to hit the ball twice, the opponent scores</li>
-            <li>If the ball lands on the line, the play is redone</li>
-          </ul>
+        <div class="rankings">
+            <div class="ranking-item top-player">
+                <div class="ranking-number">
+                    <span class="rank-circle gold">1</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Sam C.</span>
+                    <span class="record">12-0 (100%)</span>
+                    <span class="rating">Rating: 92</span>
+                </div>
+            </div>
+            <div class="ranking-item">
+                <div class="ranking-number">
+                    <span class="rank-circle">2</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Josh N.</span>
+                    <span class="record">7-1 (87.5%)</span>
+                    <span class="rating">Rating: 76</span>
+                </div>
+            </div>
+            <div class="ranking-item">
+                <div class="ranking-number">
+                    <span class="rank-circle">3</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Joshua H.</span>
+                    <span class="record">7-1 (87.5%)</span>
+                    <span class="rating">Rating: 72</span>
+                </div>
+            </div>
+            <div class="ranking-item">
+                <div class="ranking-number">
+                    <span class="rank-circle">4</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Matthew Z.</span>
+                    <span class="record">8-2 (80%)</span>
+                    <span class="rating">Rating: 71</span>
+                </div>
+            </div>
         </div>
 
-        <div class="rule-card">
-          <h3><span class="rule-number">3</span>Serving</h3>
-          <ul>
-            <li>Server must stand with both feet stationary in square A</li>
-            <li>Toss the ball upward and hit it twice toward the opponent's side</li>
-            <li>No moving feet during serve</li>
-            <li>No severe bending or squatting</li>
-            <li>Cannot bounce the ball before serving</li>
-          </ul>
+        <div class="rankings-footer">
+            <a href="leagues.html" class="view-all-link" aria-label="View complete league standings">
+                View Full Standings
+            </a>
+        </div>
+    </section>
+
+    <!-- Rules Section with Carousel -->
+    <section class="rules-section" id="rules">
+        <div class="section-header">
+            <h2>How to Play Airball</h2>
+            <p class="section-subtitle">An engaging and dynamic outdoor game that emphasizes skill, strategy, and physical activity</p>
         </div>
 
-        <div class="rule-card">
-          <h3><span class="rule-number">4</span>Spiking</h3>
-          <ul>
-            <li>Hits must be upward unless spiking</li>
-            <li>Ball must be hit from the spiking box directly in front of you</li>
-            <li>No part of your arm/hand goes above your shoulder</li>
-            <li>Second bounce stays within the court's side boundaries</li>
-            <li>May go beyond front/back boundaries</li>
-          </ul>
+        <div class="rules-overview">
+            <p><strong>Basic Concept:</strong> Players face off on opposite sides of a court, with the server hitting the ball in the air before sending it over and the receiver using two hits after one bounce to return it.</p>
         </div>
 
-        <div class="rule-card">
-          <h3><span class="rule-number">5</span>General Rules</h3>
-          <ul>
-            <li>All hits must be forceful - no soft touches or drop shots</li>
-            <li>Second bounce must land on opponent's side of court</li>
-            <li>Cannot step on opponent's side of court</li>
-            <li>Players may overturn referee calls through mutual consent</li>
-            <li>Both players must clearly see and agree on what happened</li>
-          </ul>
-        </div>
-      </div>
+        <div class="rules-carousel">
+            <div class="rules-carousel-container" id="rulesCarousel">
+                <div class="rule-card">
+                    <h3><span class="rule-number">1</span>Setup</h3>
+                    <ul>
+                        <li>Draw a rectangle on a flat, hard surface: 24 feet long by 16 feet wide</li>
+                        <li>Leave at least 10 feet of empty space around all sides</li>
+                        <li>Draw a line down the middle to create two equal halves</li>
+                        <li>Draw a "spiking line" on each side, 7 feet from the middle line</li>
+                        <li>Create three equal zones (5'4" each) on both sides of the middle line</li>
+                    </ul>
+                </div>
 
-      <div class="carousel-nav">
-        <button class="carousel-btn" id="prevBtn" aria-label="Previous rule">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-          </svg>
-        </button>
-        <button class="carousel-btn" id="nextBtn" aria-label="Next rule">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <br>
-    <div class="court-diagram">
-      <img src="court.png" alt="Detailed diagram showing Airball court dimensions and zones" loading="lazy">
-      <p class="diagram-caption">Official Airball court layout with dimensions and zones</p>
-    </div>
-  </section>
+                <div class="rule-card">
+                    <h3><span class="rule-number">2</span>Gameplay</h3>
+                    <ul>
+                        <li>The receiving player must let the ball bounce once, then return it with two hits</li>
+                        <li>One hit in the air, followed by one hit to the other side</li>
+                        <li>If a player touches the ball before it bounces, the opponent scores</li>
+                        <li>If a player fails to hit the ball twice, the opponent scores</li>
+                        <li>If the ball lands on the line, the play is redone</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3><span class="rule-number">3</span>Serving</h3>
+                    <ul>
+                        <li>Server must stand with both feet stationary in square A</li>
+                        <li>Toss the ball upward and hit it twice toward the opponent's side</li>
+                        <li>No moving feet during serve</li>
+                        <li>No severe bending or squatting</li>
+                        <li>Cannot bounce the ball before serving</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3><span class="rule-number">4</span>Spiking</h3>
+                    <ul>
+                        <li>Hits must be upward unless spiking</li>
+                        <li>Ball must be hit from the spiking box directly in front of you</li>
+                        <li>No part of your arm/hand goes above your shoulder</li>
+                        <li>Second bounce stays within the court's side boundaries</li>
+                        <li>May go beyond front/back boundaries</li>
+                    </ul>
+                </div>
+
+                <div class="rule-card">
+                    <h3><span class="rule-number">5</span>General Rules</h3>
+                    <ul>
+                        <li>All hits must be forceful - no soft touches or drop shots</li>
+                        <li>Second bounce must land on opponent's side of court</li>
+                        <li>Cannot step on opponent's side of court</li>
+                        <li>Players may overturn referee calls through mutual consent</li>
+                        <li>Both players must clearly see and agree on what happened</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="carousel-nav">
+                <button class="carousel-btn" id="prevBtn" aria-label="Previous rule">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </button>
+                <button class="carousel-btn" id="nextBtn" aria-label="Next rule">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <br>
+        <div class="court-diagram">
+            <img src="court.png" alt="Detailed diagram showing Airball court dimensions and zones" loading="lazy">
+            <p class="diagram-caption">Official Airball court layout with dimensions and zones</p>
+        </div>
+    </section>
 </main>
 
 <!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-content">
-    <img src="logo_main.png" alt="Airball Logo" class="footer-logo" loading="lazy">
-    <p>&copy; 2025 Airball. Fast-paced, strategic, and fun for everyone.</p>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="leagues.html">Leagues</a>
-      <a href="champions.html">Champions</a>
-      <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
-    </nav>
-  </div>
+    <div class="footer-content">
+        <img src="logo_main.png" alt="Airball Logo" class="footer-logo" loading="lazy">
+        <p>&copy; 2025 Airball. Fast-paced, strategic, and fun for everyone.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="leagues.html">Leagues</a>
+            <a href="champions.html">Champions</a>
+            <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
+        </nav>
+    </div>
 </footer>
 
 <script>
-  // Dark mode functionality
-  const themeToggle = document.getElementById('theme-toggle');
-  const sunIcon = document.querySelector('.sun-icon');
-  const moonIcon = document.querySelector('.moon-icon');
+    // Dark mode functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
 
-  // Check for saved theme preference or default to light mode
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', currentTheme);
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
-  if (currentTheme === 'dark') {
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
-  }
-
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-
-    if (newTheme === 'dark') {
-      sunIcon.style.display = 'none';
-      moonIcon.style.display = 'block';
-    } else {
-      sunIcon.style.display = 'block';
-      moonIcon.style.display = 'none';
+    if (currentTheme === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
     }
-  });
 
-  // Carousel functionality
-  const carousel = document.getElementById('rulesCarousel');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const indicators = document.getElementById('carouselIndicators');
-  const dots = document.querySelectorAll('.carousel-dot');
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  let currentSlide = 0;
-  const totalSlides = 5;
-  const slideWidth = 324; // 300px + 24px gap
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
 
-  function updateCarousel() {
-    const translateX = -currentSlide * slideWidth;
-    carousel.style.transform = `translateX(${translateX}px)`;
+        if (newTheme === 'dark') {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        }
+    });
 
-    // Update indicators
+    // Carousel functionality
+    const carousel = document.getElementById('rulesCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const indicators = document.getElementById('carouselIndicators');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    let currentSlide = 0;
+    const totalSlides = 5;
+    const slideWidth = 324; // 300px + 24px gap
+
+    function updateCarousel() {
+        const translateX = -currentSlide * slideWidth;
+        carousel.style.transform = `translateX(${translateX}px)`;
+
+        // Update indicators
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+
+        // Update button states
+        prevBtn.disabled = currentSlide === 0;
+        nextBtn.disabled = currentSlide === totalSlides - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+        }
+    });
+
+    // Dot navigation
     dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentSlide);
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateCarousel();
+        });
     });
 
-    // Update button states
-    prevBtn.disabled = currentSlide === 0;
-    nextBtn.disabled = currentSlide === totalSlides - 1;
-  }
+    // Initialize carousel
+    updateCarousel();
 
-  prevBtn.addEventListener('click', () => {
-    if (currentSlide > 0) {
-      currentSlide--;
-      updateCarousel();
+    // Enhanced navbar scroll behavior with performance optimization
+    let ticking = false;
+
+    function updateNavbar() {
+        const navbar = document.getElementById('navbar');
+        const scrolled = window.pageYOffset;
+
+        if (scrolled > 100) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+        ticking = false;
     }
-  });
 
-  nextBtn.addEventListener('click', () => {
-    if (currentSlide < totalSlides - 1) {
-      currentSlide++;
-      updateCarousel();
-    }
-  });
-
-  // Dot navigation
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      currentSlide = index;
-      updateCarousel();
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(updateNavbar);
+            ticking = true;
+        }
     });
-  });
 
-  // Initialize carousel
-  updateCarousel();
+    // Enhanced smooth scroll to rules section with offset for navbar
+    function scrollToRules() {
+        const rulesSection = document.getElementById('rules');
+        const navbarHeight = document.getElementById('navbar').offsetHeight;
+        const elementPosition = rulesSection.offsetTop;
+        const offsetPosition = elementPosition - navbarHeight - 40;
 
-  // Enhanced navbar scroll behavior with performance optimization
-  let ticking = false;
-
-  function updateNavbar() {
-    const navbar = document.getElementById('navbar');
-    const scrolled = window.pageYOffset;
-
-    if (scrolled > 100) {
-      navbar.classList.add('navbar-scrolled');
-    } else {
-      navbar.classList.remove('navbar-scrolled');
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     }
-    ticking = false;
-  }
 
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      requestAnimationFrame(updateNavbar);
-      ticking = true;
-    }
-  });
-
-  // Enhanced smooth scroll to rules section with offset for navbar
-  function scrollToRules() {
-    const rulesSection = document.getElementById('rules');
-    const navbarHeight = document.getElementById('navbar').offsetHeight;
-    const elementPosition = rulesSection.offsetTop;
-    const offsetPosition = elementPosition - navbarHeight - 40;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth'
+    // Add loading states and error handling for images
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+                console.warn('Failed to load image:', this.src);
+            });
+        });
     });
-  }
 
-  // Add loading states and error handling for images
-  document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-      img.addEventListener('error', function() {
-        this.style.display = 'none';
-        console.warn('Failed to load image:', this.src);
-      });
+    // Add keyboard navigation for better accessibility
+    document.addEventListener('keydown', function(e) {
+        // Alt + R to go to rules section
+        if (e.altKey && e.key === 'r') {
+            e.preventDefault();
+            scrollToRules();
+        }
+
+        // Arrow keys for carousel navigation
+        if (e.target.closest('.rules-carousel')) {
+            if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                currentSlide--;
+                updateCarousel();
+            } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
+                currentSlide++;
+                updateCarousel();
+            }
+        }
     });
-  });
 
-  // Add keyboard navigation for better accessibility
-  document.addEventListener('keydown', function(e) {
-    // Alt + R to go to rules section
-    if (e.altKey && e.key === 'r') {
-      e.preventDefault();
-      scrollToRules();
-    }
+    // Touch/swipe support for carousel
+    let startX = 0;
+    let startY = 0;
 
-    // Arrow keys for carousel navigation
-    if (e.target.closest('.rules-carousel')) {
-      if (e.key === 'ArrowLeft' && currentSlide > 0) {
-        currentSlide--;
-        updateCarousel();
-      } else if (e.key === 'ArrowRight' && currentSlide < totalSlides - 1) {
-        currentSlide++;
-        updateCarousel();
-      }
-    }
-  });
+    carousel.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+    });
 
-  // Touch/swipe support for carousel
-  let startX = 0;
-  let startY = 0;
+    carousel.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const endY = e.changedTouches[0].clientY;
+        const diffX = startX - endX;
+        const diffY = startY - endY;
 
-  carousel.addEventListener('touchstart', (e) => {
-    startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
-  });
-
-  carousel.addEventListener('touchend', (e) => {
-    const endX = e.changedTouches[0].clientX;
-    const endY = e.changedTouches[0].clientY;
-    const diffX = startX - endX;
-    const diffY = startY - endY;
-
-    // Only trigger swipe if horizontal movement is greater than vertical
-    if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
-      if (diffX > 0 && currentSlide < totalSlides - 1) {
-        // Swipe left - next slide
-        currentSlide++;
-        updateCarousel();
-      } else if (diffX < 0 && currentSlide > 0) {
-        // Swipe right - previous slide
-        currentSlide--;
-        updateCarousel();
-      }
-    }
-  });
+        // Only trigger swipe if horizontal movement is greater than vertical
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+            if (diffX > 0 && currentSlide < totalSlides - 1) {
+                // Swipe left - next slide
+                currentSlide++;
+                updateCarousel();
+            } else if (diffX < 0 && currentSlide > 0) {
+                // Swipe right - previous slide
+                currentSlide--;
+                updateCarousel();
+            }
+        }
+    });
 </script>
 </body>
 </html>
