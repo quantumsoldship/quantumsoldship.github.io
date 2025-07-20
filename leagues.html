@@ -1,584 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Airball Leagues</title>
-  <meta name="description" content="Current league standings and rankings for Airball competitive play">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airball Leagues</title>
+    <meta name="description" content="Current league standings and rankings for Airball competitive play">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 <!-- Skip to main content for accessibility -->
 
 <!-- Dark mode toggle -->
 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-  <svg class="theme-toggle-icon" fill="currentColor" viewBox="0 0 20 20">
-    <path class="sun-icon" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
-    <path class="moon-icon" style="display: none;" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
-  </svg>
+    <svg class="theme-toggle-icon" fill="currentColor" viewBox="0 0 20 20">
+        <path class="sun-icon" d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"/>
+        <path class="moon-icon" style="display: none;" d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+    </svg>
 </button>
 
 <!-- Floating Navbar -->
 <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="champions.html">Champions</a>
-  <a class="special" href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105"
-     target="_blank" rel="noopener noreferrer">Championship</a>
+    <a href="index.html">Home</a>
+    <a href="champions.html">Champions</a>
+    <a class="special" href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105"
+       target="_blank" rel="noopener noreferrer">Championship</a>
 </nav>
 <br>
 <br>
 
 <!-- Main Content -->
 <main class="main-content" id="main-content">
-  <div class="page-header">
-    <h1>Airball Leagues Standings</h1>
-    <p class="page-subtitle">2025 Season Rankings and Championship Qualification</p>
-  </div>
-
-  <!-- Championship Qualification Notice -->
-  <div class="qualification-notice">
-    <div class="notice-content">
-      <h3>Championship Qualification</h3>
-      <p>The top four players by win percentage will bypass pool play and automatically advance to the top eight in the Airball Championship.</p>
-    </div>
-  </div>
-
-  <!-- Top Four Section -->
-  <section class="top-four-section">
-    <div class="section-header">
-      <h2>Championship Qualifiers</h2>
-      <p class="section-subtitle">Top 4 players automatically advance to championship bracket</p>
+    <div class="page-header">
+        <h1>Airball Leagues Standings</h1>
+        <p class="page-subtitle">2025 Season Rankings and Championship Qualification</p>
     </div>
 
-    <div class="rankings">
-      <div class="ranking-item top-player">
-        <div class="ranking-number">
-          <span class="rank-circle gold">1</span>
+    <!-- Championship Qualification Notice -->
+    <div class="qualification-notice">
+        <div class="notice-content">
+            <h3>Championship Qualification</h3>
+            <p>The top four players by win percentage will bypass pool play and automatically advance to the top eight in the Airball Championship.</p>
         </div>
-        <div class="ranking-details">
-          <span class="player-name">Sam C.</span>
-          <span class="record">10-0 (100%)</span>
-          <span class="rating">Rating: 85</span>
-        </div>
-      </div>
-      <div class="ranking-item top-player">
-        <div class="ranking-number">
-          <span class="rank-circle">2</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Josh N.</span>
-          <span class="record">6-0 (100%)</span>
-          <span class="rating">Rating: 76</span>
-        </div>
-      </div>
-      <div class="ranking-item top-player">
-        <div class="ranking-number">
-          <span class="rank-circle">3</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Joshua H.</span>
-          <span class="record">7-1 (87.5%)</span>
-          <span class="rating">Rating: 72</span>
-        </div>
-      </div>
-      <div class="ranking-item top-player">
-        <div class="ranking-number">
-          <span class="rank-circle">4</span>
-        </div>
-        <div class="ranking-details">
-          <span class="player-name">Isaac N.</span>
-          <span class="record">5-1 (83.3%)</span>
-          <span class="rating">Rating: 74</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Detailed Rankings -->
-  <div class="rankings-comparison">
-    <div class="comparison-header">
-      <h2>Complete Rankings</h2>
-      <p class="comparison-subtitle">Compare win percentage vs. skill rating across all players</p>
     </div>
 
-    <div class="columns">
-      <div class="column">
-        <div class="ranking-card">
-          <div class="ranking-card-header">
-            <h3>Win Percentage Rankings</h3>
-            <p>Championship qualification is determined by win percentage. The top four players will progress to the quarterfinals automatically.</p>
-          </div>
-
-          <div class="detailed-rankings">
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">1</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Sam C. (10-0) – 100.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">2</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Josh N. (6-0) – 100.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">3</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Joshua H. (7-1) – 87.5%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">4</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Isaac N.(5-1) – 83.3%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">5</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Jackson F. (8-2) – 80.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">6</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Matthew Z. (6-2) – 75.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">7</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Levi C. (7-3) – 70.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">8</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bennett C. (7-3) – 70.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">9</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Graham G. (5-5) – 50.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">10</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bobby T. (5-5) – 50.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">11</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Thomas H. (3-3) – 50.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">12</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Caleb M. (2-2) – 50.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">13</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Grayson G. (3-5) – 37.5%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">14</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Matthew F. (2-6) – 33.3%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">15</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Caleb J. (2-4) – 33.3%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">16</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Zoe C. (3-7) – 30.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">17</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Maddox T. (2-8) – 20.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">18</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Simon Z. (1-6) – 14.3%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">19</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Tina F. (1-7) – 12.5%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">20</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Aly T. (1-8) – 11.1%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">21</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Vince M. (0-4) – 0.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">22</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bayo (0-4) – 0.0%</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">23</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Dillon D. (0-2) – 0.0%</span>
-              </div>
-            </div>
-          </div>
+    <!-- Top Four Section -->
+    <section class="top-four-section">
+        <div class="section-header">
+            <h2>Championship Qualifiers</h2>
+            <p class="section-subtitle">Top 4 players automatically advance to championship bracket</p>
         </div>
-      </div>
 
-      <div class="column">
-        <div class="ranking-card">
-          <div class="ranking-card-header">
-            <h3>Skill Rating Rankings</h3>
-            <p>Rating considers opponent strength, game scores, and overall performance. Players highlighted are championship qualifiers.</p>
-          </div>
-
-          <div class="detailed-rankings">
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">1</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Sam C. – 85</span>
-              </div>
+        <div class="rankings">
+            <div class="ranking-item top-player">
+                <div class="ranking-number">
+                    <span class="rank-circle gold">1</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Sam C.</span>
+                    <span class="record">12-0 (100%)</span>
+                    <span class="rating">Rating: 92</span>
+                </div>
             </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">2</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Josh N. – 76</span>
-              </div>
+            <div class="ranking-item top-player">
+                <div class="ranking-number">
+                    <span class="rank-circle">2</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Josh N.</span>
+                    <span class="record">7-1 (87.5%)</span>
+                    <span class="rating">Rating: 76</span>
+                </div>
             </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">3</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Levi C. – 75</span>
-              </div>
+            <div class="ranking-item top-player">
+                <div class="ranking-number">
+                    <span class="rank-circle">3</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Joshua H.</span>
+                    <span class="record">7-1 (87.5%)</span>
+                    <span class="rating">Rating: 72</span>
+                </div>
             </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">4</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bennett C. – 74</span>
-              </div>
+            <div class="ranking-item top-player">
+                <div class="ranking-number">
+                    <span class="rank-circle">4</span>
+                </div>
+                <div class="ranking-details">
+                    <span class="player-name">Matthew Z.</span>
+                    <span class="record">8-2 (80%)</span>
+                    <span class="rating">Rating: 71</span>
+                </div>
             </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">5</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Isaac – 74</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item highlight-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">6</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Joshua H. – 72</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">7</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Graham – 69</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">8</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bobby T. – 65</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">9</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Thomas – 63</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">10</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Grayson – 59</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">11</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Jackson F. – 55</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">12</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Caleb J. – 49</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">13</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Tina F. – 49</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">14</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Maddox T. – 48</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">15</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Matthew F. – 47</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">16</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Aly T. – 47</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">17</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Zoe C. – 47</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">18</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Simon Z. – 49</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">19</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Caleb M. – 58</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">20</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Matthew Z. – 65</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">21</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Bayo – 0</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">22</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Dillon D. – 0</span>
-              </div>
-            </div>
-            <div class="detailed-ranking-item">
-              <div class="ranking-number">
-                <span class="rank-circle small">23</span>
-              </div>
-              <div class="ranking-text">
-                <span class="player-name">Vince M. – 0</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Explanation Note -->
-    <div class="explanation-note">
-      <p><strong>Understanding the Rankings:</strong> If your win percentage is significantly higher than your rating, you likely played easier opponents or won by smaller margins. If your win percentage is lower than your rating, you probably faced stronger opponents or lost closely contested matches.</p>
+    <!-- Detailed Rankings -->
+    <div class="rankings-comparison">
+        <div class="comparison-header">
+            <h2>Complete Rankings</h2>
+            <p class="comparison-subtitle">Compare win percentage vs. skill rating across all players</p>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="ranking-card">
+                    <div class="ranking-card-header">
+                        <h3>Win Percentage Rankings</h3>
+                        <p>Championship qualification is determined by win percentage. The top four players will progress to the quarterfinals automatically.</p>
+                    </div>
+
+                    <div class="detailed-rankings">
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">1</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Sam C. (12-0) – 100.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">2</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Josh N. (7-1) – 87.5%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">3</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Joshua H. (7-1) – 87.5%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">4</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Matthew Z.(8-2) – 80%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">5</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Isaac N. (6-2) – 75.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">6</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Levi C. (9-3) – 75.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">7</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Jackson F. (8-4) – 66.7%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">8</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Bennett C. (8-4) – 66.7%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">9</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Thomas H. (5-3) – 62.5%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">10</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Bobby T. (7-5) – 58.3%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">11</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Caleb J. (4-4) – 50.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">12</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Graham G. (5-5) – 50.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">13</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Caleb M. (3-3) – 50.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">14</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Grayson (3-5) – 37.5%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">15</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Matthew F. (3-7) – 30.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">16</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Zoe C. (3-9) – 25.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">17</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Aly T. (2-10) – 16.7%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">18</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Maddox T. (2-10) – 16.7%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">19</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Simon Z. (1-9) – 10.0%</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">20</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Tina F. (1-9) – 10.0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="ranking-card">
+                    <div class="ranking-card-header">
+                        <h3>Skill Rating Rankings</h3>
+                        <p>Rating considers opponent strength, game scores, and overall performance. Players highlighted are championship qualifiers.</p>
+                    </div>
+
+                    <div class="detailed-rankings">
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">1</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Sam C. – 92</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">2</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Levi C. – 77</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">3</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Josh N. – 76</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">4</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Isaac N. – 76</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">5</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Bennett – 75</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">6</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Joshua H. – 71</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item highlight-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">6</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Matthew Z. – 71</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">7</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Bobby T. - 69</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">8</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Graham G. - 69</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">9</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Jackson F. – 64</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">10</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Thomas H. – 63</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">11</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Caleb J. – 62</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">12</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Grayson. – 59</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">13</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Caleb M. – 59</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">14</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Zoe C. – 47</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">15</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Simon Z. – 47</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">16</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Aly T. – 46</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">17</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Tina F. – 46</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">18</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Maddox T. – 45</span>
+                            </div>
+                        </div>
+                        <div class="detailed-ranking-item">
+                            <div class="ranking-number">
+                                <span class="rank-circle small">19</span>
+                            </div>
+                            <div class="ranking-text">
+                                <span class="player-name">Matthew F. – 43</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explanation Note -->
+        <div class="explanation-note">
+            <p><strong>Understanding the Rankings:</strong> If your win percentage is significantly higher than your rating, you likely played easier opponents or won by smaller margins. If your win percentage is lower than your rating, you probably faced stronger opponents or lost closely contested matches.</p>
+        </div>
     </div>
-  </div>
 </main>
 
 <!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-content">
-    <img src="logo_main.png" alt="Airball Logo" class="footer-logo" loading="lazy">
-    <p>&copy; 2025 Airball. Fast-paced, strategic, and fun for everyone.</p>
-    <nav class="footer-nav" aria-label="Footer navigation">
-      <a href="index.html">Home</a>
-      <a href="champions.html">Champions</a>
-      <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
-    </nav>
-  </div>
+    <div class="footer-content">
+        <img src="logo_main.png" alt="Airball Logo" class="footer-logo" loading="lazy">
+        <p>&copy; 2025 Airball. Fast-paced, strategic, and fun for everyone.</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="champions.html">Champions</a>
+            <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
+        </nav>
+    </div>
 </footer>
 
 <script>
-  // Dark mode functionality
-  const themeToggle = document.getElementById('theme-toggle');
-  const sunIcon = document.querySelector('.sun-icon');
-  const moonIcon = document.querySelector('.moon-icon');
+    // Dark mode functionality
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
 
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', currentTheme);
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', currentTheme);
 
-  if (currentTheme === 'dark') {
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
-  }
-
-  themeToggle.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-
-    if (newTheme === 'dark') {
-      sunIcon.style.display = 'none';
-      moonIcon.style.display = 'block';
-    } else {
-      sunIcon.style.display = 'block';
-      moonIcon.style.display = 'none';
+    if (currentTheme === 'dark') {
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'block';
     }
-  });
 
-  // Enhanced navbar scroll behavior
-  let ticking = false;
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
 
-  function updateNavbar() {
-    const navbar = document.getElementById('navbar');
-    const scrolled = window.pageYOffset;
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
 
-    if (scrolled > 100) {
-      navbar.classList.add('navbar-scrolled');
-    } else {
-      navbar.classList.remove('navbar-scrolled');
-    }
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', function() {
-    if (!ticking) {
-      requestAnimationFrame(updateNavbar);
-      ticking = true;
-    }
-  });
-
-  // Add loading states for images
-  document.addEventListener('DOMContentLoaded', function() {
-    const images = document.querySelectorAll('img');
-    images.forEach(img => {
-      img.addEventListener('error', function() {
-        this.style.display = 'none';
-        console.warn('Failed to load image:', this.src);
-      });
+        if (newTheme === 'dark') {
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        } else {
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        }
     });
-  });
+
+    // Enhanced navbar scroll behavior
+    let ticking = false;
+
+    function updateNavbar() {
+        const navbar = document.getElementById('navbar');
+        const scrolled = window.pageYOffset;
+
+        if (scrolled > 100) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(updateNavbar);
+            ticking = true;
+        }
+    });
+
+    // Add loading states for images
+    document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.display = 'none';
+                console.warn('Failed to load image:', this.src);
+            });
+        });
+    });
 </script>
 </body>
 </html>
