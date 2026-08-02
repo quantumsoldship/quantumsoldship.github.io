@@ -34,53 +34,8 @@
 <main class="main-content" id="main-content">
     <div class="page-header">
         <h1>Airball Photos</h1>
-        <p class="page-subtitle">Moments from games, leagues, and championships</p>
-    </div>
+        <div class="photo-gallery" id="photo-gallery"></div>
 
-        <div class="photo-gallery">
-        <figure class="photo-card">
-            <img src="photos/IMG_2154 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2158 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2161 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2172 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2186 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2255 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2284 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2299 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2300 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2323 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2336 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2340 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2359 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-        <figure class="photo-card">
-            <img src="photos/IMG_2360 Large.png" alt="Airball game moment" loading="lazy">
-        </figure>
-    </div>
 
 </main>
 
@@ -94,7 +49,6 @@
             <a href="leagues.html">Leagues</a>
             <a href="champions.html">Champions</a>
             <a href="photos.html">Photos</a>
-            <a href="https://classy-cairnsmore-f09.notion.site/21657819ab6080a3bfc2e7d1bb091dd8?pvs=105" target="_blank" rel="noopener noreferrer">Championship</a>
         </nav>
     </div>
 </footer>
@@ -156,6 +110,31 @@
             });
         });
     });
+
+    // Auto-load all photos from the /photos folder via GitHub API
+    fetch('https://api.github.com/repos/quantumsoldship/quantumsoldship.github.io/contents/photos')
+        .then(response => response.json())
+        .then(files => {
+            const gallery = document.getElementById('photo-gallery');
+            const imageExtensions = /\.(png|jpe?g|gif|webp|avif)$/i;
+
+            files
+                .filter(file => imageExtensions.test(file.name))
+                .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }))
+                .forEach(file => {
+                    const figure = document.createElement('figure');
+                    figure.className = 'photo-card';
+
+                    const img = document.createElement('img');
+                    img.src = 'photos/' + file.name;
+                    img.alt = 'Airball game moment';
+                    img.loading = 'lazy';
+
+                    figure.appendChild(img);
+                    gallery.appendChild(figure);
+                });
+        })
+        .catch(error => console.warn('Could not load photos:', error));
 </script>
 </body>
 </html>
